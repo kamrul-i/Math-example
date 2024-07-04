@@ -13,10 +13,14 @@ public class Multiplication_of_Digit {
         n = input.nextInt();
 
         for (int i = m; i <= n; i++) {
-            System.out.print(i + " ");
-            multiplication = multiplication * i;
+
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+                //System.out.println(i);
+                multiplication = multiplication * i;
+            }
         }
         System.out.println();
-        System.out.println("The multiplication is : " + multiplication);
+        System.out.println("The multiplication of even number's is : " + multiplication);
     }
 }
