@@ -6,18 +6,18 @@ public class Sum_of_Digit {
         //------------------------------------
         Scanner input = new Scanner(System.in);
 
-        int n, num = 0;
+        double p, number = 0;
         System.out.print("Enter the last number : ");
-        n = input.nextInt();
+        p = input.nextDouble();
 
-        for (int i = 1; i <= n; i = i + 2) {
-            num = num + i;
+        for (double i = 1.5; i <= p; i++) {
+            number = number + i;
             System.out.print(i + " ");
         }
-        //System.out.println();
-        System.out.println(" = " + num);
+        System.out.println();
+        System.out.println("= " + number);
         //------------------------------------
-        //series_1+3+5+................+n তম পদ
+        //series_1.5+2.5+3.5+...............+n তম পদ 
 
     }
 }
