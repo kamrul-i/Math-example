@@ -3,20 +3,21 @@ import java.util.Scanner;
 public class Sum_of_Digit {
 
     public static void main(String[] args) {
-        //--------------------------------------
+        //------------------------------------
         Scanner input = new Scanner(System.in);
 
-        int m, sum = 0;
+        int n, num = 0;
         System.out.print("Enter the last number : ");
-        m = input.nextInt();
+        n = input.nextInt();
 
-        for (int i = 1; i <= m; i++) {
-            System.out.println(i + " ");
-            sum = sum + i;
+        for (int i = 1; i <= n; i = i + 2) {
+            num = num + i;
+            System.out.print(i + " ");
         }
-        //System.out.printf("\n");
-        System.out.println(" = " + sum);
-        //--------------------------------------
-        //series_1+2+3+.............+m
+        //System.out.println();
+        System.out.println(" = " + num);
+        //------------------------------------
+        //series_1+3+5+................+n তম পদ
+
     }
 }
