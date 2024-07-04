@@ -5,22 +5,16 @@ public class Multiplication_of_Digit {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int m, n, multiplication = 1;
-        System.out.print("Enter first number : ");
+        int m, multiplication = 1;
+        System.out.print("Enter the last number : ");
         m = input.nextInt();
 
-        System.out.print("Enter last number : ");
-        n = input.nextInt();
-
-        for (int i = m; i <= n; i++) {
-
-            if (i % 2 != 0) {
-                System.out.print(i + " ");
-                //System.out.println(i);
-                multiplication = multiplication * i;
-            }
+        for (int i = 1; i <= m; i++) {
+            System.out.print(i + " ");
+            multiplication = multiplication * i;
         }
         System.out.println();
-        System.out.println("The multiplication of odd number's is : " + multiplication);
+        System.out.println(m + " টি সংখ্যার গুণফল" + " = " + multiplication);
     }
+    //series_1*2*3*4*5*..........................*m
 }
