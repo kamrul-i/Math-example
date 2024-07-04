@@ -5,17 +5,18 @@ public class Multiplication_of_Digit {
     public static void main(String[] args) {
         try (Scanner input = new Scanner(System.in)) {
 
-            long n, multipli = 1;
+            double p, multiplication = 1;
             System.out.print("Enter the last number : ");
-            n = input.nextInt();
+            p = input.nextDouble();
 
-            for (long i = 1; i <= n; i = i + 2) {
+            for (double i = 1.5; i <= p; i++) {
                 System.out.print(i + " ");
-                multipli = multipli * i;
+                multiplication = multiplication * i;
             }
-            System.out.println();
-            System.out.println(n + " পর্যন্ত বিজোড় সংখ্যাগুলোর গুণফল = " + multipli);
+            System.out.printf("\n");
+            System.out.print(p + " এর মধ্যে দশমিক সংখ্যাগুলোর গুণফল = "+multiplication);
+            //System.out.printf("%.2f", multiplication);
         }
-        //series_1*3*5*7*..............*n
+        //series_1.5 * 2.5 * 3.5 * .................*p
     }
 }
