@@ -5,26 +5,28 @@ public class Prime_Number {
     public static void main(String[] args) {
         try (Scanner input = new Scanner(System.in)) {
 
-            System.out.print("Enter any positive number : ");
-            int num = input.nextInt();
-            int count = 0;
+            int m, n, count = 0, totalPrime = 0;
+            System.out.print("Enter initial number : ");
+            m = input.nextInt();
 
-            if (num == 0 || num == 1) {
-                System.out.println(" not prime");
-            } else {
-                for (int i = 2; i < num / 2; i++) {
-                    if (num % i == 0) {
+            System.out.print("Enter final number : ");
+            n = input.nextInt();
+
+            for (int i = m; i <= n; i++) {
+                for (int j = 2; j <= i - 1; j++) {
+                    if (i % j == 0) {
                         count++;
                         break;
                     }
                 }
-                if (count == 0) {
-                    System.out.print(num + " is prime ummber.");
-                } else {
-                    System.out.print(num + " is not prime number.");
+                if (count == 0 && i > 1) {
+                    System.out.println(i);
+                    totalPrime++;
                 }
+                count = 0;
             }
-            //prime number check..................................	      
+            System.out.println("Total prime number = " + totalPrime);	      
         }
+        //print prime number .....................................
     }
 }
